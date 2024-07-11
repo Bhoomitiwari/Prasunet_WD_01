@@ -1,0 +1,277 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.content {
+    background-color: #88bdbc;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+.navbar.scrolled {
+    background-color: #222;
+}
+
+.content {
+    padding-top: 60px; /* Space for the fixed navbar */
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.footer-section {
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+    /* background-image: linear-gradient(50deg , #401F71 , #000); */
+    background-color: #a4c3b2;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.author {
+    width: auto;
+    height: 50px;
+    background-image: linear-gradient(240deg, #401f71, #000);
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.author a {
+    text-decoration: none;
+    color: #FFAF45;
+}
+
+.author a:hover {
+    pad: 1px;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+.social-media a,
+.about-project a,
+.author {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media a:hover {
+    color: #FFAF45;
+    margin: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.about-project a:hover {
+    color: #ff3ef2;
+    padding: 2px;
+    transition: 0.5s ease-in-out;
+}
+@media screen and (min-width:800px) {
+
+    .footer-section {
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        font-size: 0.90rem;
+        background-image: linear-gradient(240deg, #333, #000);
+        /* background-color: #a4c3b2; */
+        border-radius: 20px;
+    }
+
+    .social-media
+    {
+        width: auto;
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    .author {
+        padding-top: 20px;
+        height: 150px;
+        background-image: linear-gradient(240deg, #333, #000);
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .footer-section h2 {
+        font-size: 1.50rem;
+        color: white;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    .app {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .card-1,
+    .card-2 {
+        width: auto;
+        height: auto;
+        padding: 15px;
+        gap: 30px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #search-box {
+        width: 150px;
+        height: 25px;
+        font-size: 0.80rem;
+    }
+
+    .card-1 button {
+        width: 60px;
+        height: 25px;
+        font-size: 0.60rem;
+    }
+
+    .card-2-data {
+        width: 150px;
+    }
+
+    .card-2-data h4 {
+        font-size: 0.70rem;
+    }
+
+    .card-1 {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        gap: 20px;
+        text-align: center;
+        font-size: 0.90rem;
+    }
+
+    .card-2 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.90rem;
+        background-image: url(/bg-img2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+
+    .card-2 i {
+        margin-top: 2px;
+    }
+
+
+    .footer-section {
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        font-size: 0.90rem;
+    }
+
+    .social-media,
+    .about-project {
+        width: auto;
+        height: 150px;
+    }
+
+    .author {
+        padding-top: 20px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-section h2 {
+        font-size: 1.20rem;
+    }
+
+}
+#home-h2{
+    text-align: center;
+    /*  padding-top: 150px; */
+    color: rgb(185, 221, 213);
+}
+
+.home-div, .about-div, .services-div{
+    width: auto;
+    background-color: #333;
+    min-height: 80vh;
+    border-radius: 30px;
+    transition: 1s all ease;
+}
+.home-div:hover{
+    scale: 0.8;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-div:hover{
+    scale: 0.8;
+}
+.about-div p{
+    color: rgb(185, 221, 213);
+    padding: 50px;
+    
+}
+.services-div{
+    flex-direction: column;
+}
+.services-div p{
+    color: rgb(185, 221, 213);
+}
+.services-div h2{
+    color: rgb(185, 221, 213);
+}
+.services-div:hover{
+    scale: 0.8;
+}
